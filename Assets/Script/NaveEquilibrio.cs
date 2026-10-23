@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NaveEquilibrio : MonoBehaviour
 {
-    public float fuerza = 8f;
+    public float fuerza = 15f;
 
     private Rigidbody2D rb;
 
