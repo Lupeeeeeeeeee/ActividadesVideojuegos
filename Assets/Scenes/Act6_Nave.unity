@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 241867435}
   - component: {fileID: 241867434}
+  - component: {fileID: 241867436}
   m_Layer: 0
   m_Name: Motor
   m_TagString: Untagged
@@ -211,6 +212,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1210780591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &241867436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241867433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560e182d0923efa45afab7672d1c212a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CambioColor
 --- !u!1 &1210780589
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +236,7 @@ GameObject:
   - component: {fileID: 1210780590}
   - component: {fileID: 1210780593}
   - component: {fileID: 1210780592}
+  - component: {fileID: 1210780594}
   m_Layer: 0
   m_Name: Nave
   m_TagString: Untagged
@@ -379,6 +393,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1210780594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210780589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda7d3331e5d2f04ea65aafe84866937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlNave
+  velocidadHorizontal: 8
+  velocidadVertical: 4
 --- !u!1 &1881815526
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +549,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 2
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
